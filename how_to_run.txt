@@ -1,0 +1,8 @@
+Step 1
+cargo check
+
+Step 2
+cargo install elf2uf2-rs --no-default-features
+
+Step 3
+cargo run

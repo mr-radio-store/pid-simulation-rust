@@ -1,0 +1,20 @@
+[package]
+name = "pid_simulation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+panic-halt = "0.2.0"
+rtt-target = "0.5.0"
+
+# Standard desktop plotting engine
+plotters = "0.3.7"
+
+# Add this profile configuration at the bottom
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
